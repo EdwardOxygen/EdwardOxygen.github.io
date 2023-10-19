@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nighysky&#39;s Blog</title>
+  
+  
+  <link href="https://edwardoxygen.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://edwardoxygen.github.io/"/>
+  <updated>2022-03-20T13:24:58.479Z</updated>
+  <id>https://edwardoxygen.github.io/</id>
+  
+  <author>
+    <name>Edward Oxygen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Peojects</title>
+    <link href="https://edwardoxygen.github.io/2021/01/01/index/"/>
+    <id>https://edwardoxygen.github.io/2021/01/01/index/</id>
+    <published>2020-12-31T16:34:17.000Z</published>
+    <updated>2022-03-20T13:24:58.479Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="/gbook/1/index.html">Econometrics</a></p><p><a href="/gbook/2/index.html">Mysql</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;/gbook/1/index.html&quot;&gt;Econometrics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/gbook/2/index.html&quot;&gt;Mysql&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记阿里云轻量服务器实现https协议访问</title>
+    <link href="https://edwardoxygen.github.io/2020/10/25/%E8%AE%B0%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0https%E5%8D%8F%E8%AE%AE%E8%AE%BF%E9%97%AE/"/>
+    <id>https://edwardoxygen.github.io/2020/10/25/%E8%AE%B0%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0https%E5%8D%8F%E8%AE%AE%E8%AE%BF%E9%97%AE/</id>
+    <published>2020-10-25T15:56:41.000Z</published>
+    <updated>2020-10-25T18:11:05.180Z</updated>
+    
+    <content type="html"><![CDATA[<p>查了很多资料，改了很多代码，最终发现不是代码的问题，而是阿里云轻量服务器根本没给你放行443端口，需要自己打开！</p><p>下面是命令代码：</p><span id="more"></span><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=443/tcp</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -p tcp --dport 443 -j ACCEPT</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;查了很多资料，改了很多代码，最终发现不是代码的问题，而是阿里云轻量服务器根本没给你放行443端口，需要自己打开！&lt;/p&gt;
+&lt;p&gt;下面是命令代码：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Diary" scheme="https://edwardoxygen.github.io/categories/Diary/"/>
+    
+    
+    <category term="code" scheme="https://edwardoxygen.github.io/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo上传指令</title>
+    <link href="https://edwardoxygen.github.io/2020/10/22/hexo%E4%B8%8A%E4%BC%A0%E6%8C%87%E4%BB%A4/"/>
+    <id>https://edwardoxygen.github.io/2020/10/22/hexo%E4%B8%8A%E4%BC%A0%E6%8C%87%E4%BB%A4/</id>
+    <published>2020-10-22T10:00:00.000Z</published>
+    <updated>2020-10-25T18:11:06.118Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次接触hexo，下面记一下上传代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>或</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>或</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><span id="more"></span><hr><p>2020年10月23日</p><p>从别人那里学到如下操作：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><!--more-->]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;第一次接触hexo，下面记一下上传代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;或&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo cl&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;或&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Diary" scheme="https://edwardoxygen.github.io/categories/Diary/"/>
+    
+    
+    <category term="code" scheme="https://edwardoxygen.github.io/tags/code/"/>
+    
+  </entry>
+  
+</feed>
