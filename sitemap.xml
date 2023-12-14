@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://edwardoxygen.github.io/2023/12/14/%E7%8E%8B%E7%82%9C%E6%88%90%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0%E8%87%AA%E5%BE%8B%E5%85%AC%E7%BA%A6/</loc>
+    
+    <lastmod>2023-12-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://edwardoxygen.github.io/projects/index.html</loc>
     
     <lastmod>2022-03-21</lastmod>
@@ -67,7 +76,7 @@
 
   <url>
     <loc>https://edwardoxygen.github.io/</loc>
-    <lastmod>2023-10-19</lastmod>
+    <lastmod>2023-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,7 +84,7 @@
   
   <url>
     <loc>https://edwardoxygen.github.io/tags/code/</loc>
-    <lastmod>2023-10-19</lastmod>
+    <lastmod>2023-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -84,7 +93,7 @@
   
   <url>
     <loc>https://edwardoxygen.github.io/categories/Diary/</loc>
-    <lastmod>2023-10-19</lastmod>
+    <lastmod>2023-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
